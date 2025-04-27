@@ -1,0 +1,135 @@
+.myclients{
+    background-color: #F5F3EA;
+    padding-top: 30px;
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    &__title{
+        max-width: 438px;
+        margin: 0 auto;
+        font-family: 'Gilroy-Light', sans-serif;
+        font-weight: 300;
+        font-size: 80px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: $dark-color;
+        margin-bottom: 70px;
+    }
+    &__wrapper{
+        max-width: 438px;
+        margin: 0 auto;
+    }
+    &__card{
+        border-bottom:1px solid #252525;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        &:last-child{
+            border-bottom: none;
+        }
+        &-title{
+            font-family: 'Gilroy-Bold', sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: 0%;
+            color: $dark-color;
+            margin-top: 30px;
+        }
+        &-desc{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            color: $dark-color;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &-wrapper{
+            display: flex;
+            align-items: center;
+            column-gap: 20px; 
+            &--name{
+                font-family: Inter;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 0%;
+                color: $dark-color;
+            }
+            &--position{
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 0%;
+                color: $dark-color;
+                margin-top: 10px;
+
+            }
+        }
+    }
+}
+@media (min-width:768px) and (max-width: 1200px) {
+.myclients{
+    &__title{
+        max-width: 931px;
+        margin: 0 auto;
+        font-size: 150px;
+        letter-spacing: 4%;
+        text-align: center;
+    }
+    &__wrapper{
+        max-width: 931px;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+}
+@media (min-width:1200px) {
+    .myclients{
+        padding-top: 50px;
+        padding-bottom: 130px;
+        &__title{
+            max-width: 1780px;
+            margin: 0 auto;
+            font-size: 212px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        &__wrapper{
+            max-width: 1780px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        &__card{
+            border-bottom:none;
+            padding-bottom: 0;
+            padding-top: 0;
+            padding: 30px;
+            &:first-child{
+                border-right: 1px solid #000000;
+                border-bottom: 1px solid #000000;
+            }
+            &:nth-child(2){
+                border-bottom: 1px solid #000000;
+                border-right: 1px solid #000000;
+            }
+            &:nth-child(3){
+                border-bottom: 1px solid #000000;
+            }
+            &:nth-child(4){
+                border-right: 1px solid #000000;
+            }
+            &:nth-child(5){
+                border-right: 1px solid #000000;
+            }
+
+            
+        }
+    }
+}
