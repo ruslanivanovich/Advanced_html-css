@@ -1,0 +1,221 @@
+
+.our-team {
+  background-color: $primary_color;
+  padding-top: 50px;
+
+  &__content.container {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+    font-size: 212px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  &__name {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    padding-top: 30px;
+    padding-bottom: 5px;
+
+   }
+    
+     &__role {
+     font-family: 'Gilroy-Medium', sans-serif;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 100%;
+     padding-bottom: 15px;
+   }
+
+  &__inner--cta {
+    grid-column: 3 / 5;
+    padding: 177px 0 15px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0 30px;
+    gap: 10px;
+  }
+  &__join {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: #333333;
+    
+   }
+    
+   &__description {
+     font-family: 'Gilroy-Bold', sans-serif;
+     font-weight: 400;
+     font-size: 64px;
+     line-height: 100%;
+     text-transform: uppercase;
+    
+     padding-bottom: 15px;
+     color: #333333;
+    
+   }
+
+ 
+    &__actions {
+      display: flex;
+    }
+   
+    
+   &__button {
+     gap: 10px;
+     text-align: center;
+     background-color: $black;
+     color: white;
+     border-radius: 50px;
+     border: none;
+
+     padding: 16px 30px 16px;
+     margin-top: 15px;
+     margin-bottom: 217px;
+
+     font-family: 'Gilroy-Medium', sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 100%;
+    
+     }
+
+  
+      border-bottom: 1px solid #252525;  
+
+  // ———————————————————————————
+  // 2. Планшет (≤1199px)
+  @media (max-width: 1199px) {
+    &__content.container {
+      max-width: 928px;
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 120px;
+      padding-bottom: 30px;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    &__inner--cta {
+      grid-column: 1 / 3;
+      padding: 80px 20px;
+    }
+    &__join {
+      font-size: 30px;
+    }
+    &__description {
+      font-weight: 600;
+      font-size: 54px;
+    }
+
+    &__social {
+      justify-content: flex-end;
+      padding: 10px 0 20px;
+    }
+    &__socicon {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__button {
+      margin-bottom: 120px;
+
+    }
+  }
+
+  // ———————————————————————————
+  // 3. Мобільні (≤767px)
+  @media (max-width: 767px) {
+    &__content.container {
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    &__title {
+      font-size: 48px;
+      padding-bottom: 24px;
+    }
+
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding-bottom: 40px;
+    }
+
+    &__inner--cta {
+      grid-column: 1 / -1;
+      padding: 40px 16px;
+    }
+
+    &__join {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__description {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+   
+    }
+   
+
+    &__social {
+      justify-content: center;
+      padding: 12px 0;
+    }
+   
+    &__actions {
+      justify-content: center; 
+    }
+    &__button {
+      margin: auto;
+      width: 100%;
+      max-width: 438px;
+     
+    
+    }
+    &__socicon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+   
+  .our-team__photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}

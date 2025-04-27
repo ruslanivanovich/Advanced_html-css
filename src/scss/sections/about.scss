@@ -1,6 +1,7 @@
 .about {
     
     background-color: $primary_color;
+    border-bottom: 1px solid;
     padding-bottom: 50px;
     padding-top: 93px;
 
@@ -106,9 +107,7 @@
             padding-bottom: 40px;
       
         }
-        .about-line-down {
-            display: none;
-          }
+           
         
       }
 
