@@ -1,0 +1,214 @@
+.selected-work {
+    background-color: $primary_color;
+    padding-top: 70px;
+    padding-bottom: 50px;
+   
+
+    .selected-work__gallery.container {
+        padding: 0;
+       
+      }
+
+    &__title {
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 300;
+        font-size: 212px;
+        line-height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+    
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        padding-top: 50px;
+    }
+
+    &__trinity {
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: black;
+
+    }
+
+    &__tag {
+        display: inline-block;
+        background-color: white;
+        border-radius: 50px;
+        padding: 15px 30px 15px 30px;
+        margin-bottom: 350px;
+        margin-top: 74px;
+        margin-right: 30px;
+
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        vertical-align: middle;
+
+    }
+
+    &__button {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__discover {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        display: flex;
+        gap: 10px;
+        padding: 15px 30px 15px 30px;
+
+    }
+
+    &__morpheus {
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    &__button-all {
+        width: 187px;
+        margin: 70px auto 0;
+        margin-bottom: 70px;
+
+    }
+
+    &__all {
+        background-color: white;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        padding: 15px 60px 15px 60px;
+        text-align: center;
+        border-radius: 50px;
+
+    }
+
+    &__line-down {
+        border: none;
+        border-bottom: 2px solid #252525;
+  
+    }
+
+
+
+
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+
+        &__title {
+            font-size: 130px;
+            
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            .selected-work__card--foto1     { order: 1; }
+            .selected-work__card--foto2     { order: 2; }
+            .selected-work__card--trinity   { order: 3; }
+            .selected-work__card--foto3     { order: 4; }
+            .selected-work__card--foto4     { order: 5; }
+            .selected-work__card--morpheus  { order: 6; }
+
+        }
+        &__tag {
+            margin-bottom: 30px;
+           
+        }
+
+        &__media, img {
+            width: 100%;
+        }
+
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        &__title {
+            font-size: 55px;
+            
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .selected-work__card--foto1     { order: 1; }
+            .selected-work__card--foto2     { order: 2; }
+            .selected-work__card--trinity   { order: 3; }
+            .selected-work__card--foto3     { order: 4; }
+            .selected-work__card--foto4     { order: 5; }
+            .selected-work__card--morpheus  { order: 6; }
+
+        }
+        &__info {
+            width: 100%;
+            padding: 0;   
+          }
+        &__trinity {
+            font-size: 30px;
+        }
+        &__tag {
+            margin-bottom: 20px;
+           
+        }
+        &__morpheus {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        &__media, img {
+            width: 100%;
+        }
+        &__discover {
+            font-size: 14px;
+    
+        }
+
+        &__button-all {
+           
+            margin-bottom: 30px;
+            width: 100%; 
+
+            // padding-left: 15px;
+            // padding-right: 15px;
+           
+          
+        }
+      
+
+        .selected-work__tag {
+            font-size: 11px;
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+
+       
+    }
+
+
+  
+
+}
+
+
+
+
+
