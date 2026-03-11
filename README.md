@@ -29,5 +29,5 @@ This project was developed in collaboration with another developer as a pair pro
 
 
 ## 🌐 Live Demo
-(Add GitHub Pages link if available)
+https://ruslanivanovich.github.io/Advanced_html-css_STEP/
 
